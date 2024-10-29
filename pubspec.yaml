@@ -1,6 +1,6 @@
 name: common
 description: "A flutter library for commons that can be used in all projects"
-version: 0.1.0
+version: 0.2.0
 author: Eihror<igor.gomes.melo@gmail.com>
 homepage:
 
@@ -9,8 +9,10 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  decimal: ^3.0.2
   flutter:
     sdk: flutter
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
