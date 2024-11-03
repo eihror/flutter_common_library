@@ -28,7 +28,8 @@ class MonetaryAmount implements Comparable<MonetaryAmount> {
   }
 
   factory MonetaryAmount.fromCents(int amountInCents) {
-    return MonetaryAmount(amount: Decimal.fromInt(amountInCents));
+    final amountInDouble = amountInCents / _ONE_HUNDRED;
+    return MonetaryAmount(amount: Decimal.parse(amountInDouble.toString()));
   }
 
   MonetaryAmount operator +(MonetaryAmount other) {
